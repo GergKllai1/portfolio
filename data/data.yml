@@ -1,3 +1,0 @@
--name: FizzBuzz Game
-description: A FizzBuzz game where you get a random number and you have to guess whether that Fizz, Buzz, FizzBuzz or neither. Includes a timer and score.
-
