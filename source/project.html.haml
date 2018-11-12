@@ -1,0 +1,6 @@
+= partial 'partials/header'
+
+.projects
+    -data.projects.each do |project|
+        %h2= project[:name]
+        %p= project[:description]

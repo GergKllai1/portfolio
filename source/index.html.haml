@@ -1,7 +1,16 @@
-%a{href: "about.html"} About
+= partial 'partials/header'
 %h1 Hello World
 
-.projects
-    -data.projects.each do |project|
-        %a{href:"project.html"}= project[:name]
-        %p= project[:description]
+%p I am Gregory Kallai Junior Software developer
+
+%p This is my personal portfolio website where you can check out what I have been working on
+
+%p The main technologies I work with:
+
+.images
+    %img(src="images/js.png" alt="No image avaliable" srcset="")/
+    %img(src="images/rby.png" alt="No image avaliable" srcset="")/
+    %img(src="images/css.png" alt="No image avaliable" srcset="")/
+    %img(src="images/tailwind.png" alt="No image avaliable" srcset="")/
+    %img#cucumber(src="images/cucumber.png" alt="No image avaliable" srcset="")/
+    %img#rspec(src="images/rspec.jpg" alt="No image avaliable" srcset="")/
