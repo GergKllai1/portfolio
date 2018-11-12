@@ -3,5 +3,5 @@
 
 .projects
     -data.projects.each do |project|
-        %h4= project[:name]
+        %a{href:"project.html"}= project[:name]
         %p= project[:description]
