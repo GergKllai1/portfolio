@@ -1,9 +1,30 @@
 - name: FizzBuzz Game
   description: A FizzBuzz game where you get a random number and you have to guess whether that Fizz, Buzz, FizzBuzz or neither. Includes a timer and score.
-  technologies: JavaCript
+  technologies: JavaCript, e2e training wheels
   github: https://github.com/GergKllai1/fizzbuzz_js/tree/development
+  website: https://gergkllai1.github.io/fizzbuzz_js/
 
 - name: Address Book
-  description: An address book where you can add contacts and they are being stored at localstorage and displayed on the page
-  technologies: JavaCript 
+  description: An address book where you can add contacts and they are being stored at localstorage and displayed on the page.
+  technologies: JavaScript, cucumber
   github: https://github.com/GergKllai1/fizzbuzz_js/tree/development
+  website: https://gergkllai1.github.io/Adress_book/
+
+- name: BMI Calcultator
+  description: A simple BMI calculator written in JavaScript deployed to a website with a toggle for different methods. Tested in e2e training wheels.
+  technologies: JavaScript, e2e training wheels
+  github: https://github.com/GergKllai1/BMI-calculator
+  website: https://bmicalc.netlify.com/
+
+- name: ATM simulator
+  description: An ATM simulator written in Ruby, tested in Rspec. Users can make account, deposit, withdraw, get a job and work.
+  technologies: Ruby, Rspec
+  github: https://github.com/GergKllai1/ATM_Challenge
+  website:
+
+- name: Library simulator
+  description: A library simulator written in Ruby, tested in Rspec. Users can create a collection, add books to it, people can take out books.
+  technologies: Ruby, Rspec
+  github: https://github.com/GergKllai1/library-challenge
+  website:
+
