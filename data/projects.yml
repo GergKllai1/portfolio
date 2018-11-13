@@ -1,30 +1,56 @@
 - name: FizzBuzz Game
-  description: A FizzBuzz game where you get a random number and you have to guess whether that Fizz, Buzz, FizzBuzz or neither. Includes a timer and score.
-  technologies: JavaCript, e2e training wheels
+  description: A FizzBuzz game written in JavaScript, tested with Cucumber. You have guess numbers between 1 and 1000 whether they are Fizz, Buzz or FizzBuzz. You have 60 seconds to achieve high score.
   picture: images/FizzBuzz.jpg
   github: https://github.com/GergKllai1/fizzbuzz_js/tree/development
   website: https://gergkllai1.github.io/fizzbuzz_js/
+  technologies:
+      - images/js.png
+      - images/cucumber1.png
+      - images/html.png
+      - images/css.png
+      - images/tailwind.png
 
 - name: Address Book
   description: An address book where you can add contacts and they are being stored at localstorage and displayed on the page.
-  technologies: JavaScript, cucumber
   github: https://github.com/GergKllai1/Adress_book/
   website: https://gergkllai1.github.io/Adress_book/
+  technologies:
+      - images/js.png
+      - images/cucumber1.png
+      - images/html.png
+      - images/css.png
+      - images/tailwind.png
 
 - name: BMI Calcultator
   description: A simple BMI calculator written in JavaScript deployed to a website with a toggle for different methods. Tested in e2e training wheels.
-  technologies: JavaScript, e2e training wheels
   github: https://github.com/GergKllai1/BMI-calculator
   website: https://bmicalc.netlify.com/
+  technologies:
+      - images/js.png
+      - images/cucumber1.png
+      - images/html.png
+      - images/css.png
 
 - name: ATM simulator
   description: An ATM simulator written in Ruby, tested in Rspec. Users can make account, deposit, withdraw, get a job and work.
-  technologies: Ruby, Rspec
   github: https://github.com/GergKllai1/ATM_Challenge
   website:
+  technologies:
+    - images/ruby.png
+    - images/rspec.png
 
 - name: Library simulator
   description: A library simulator written in Ruby, tested in Rspec. Users can create a collection, add books to it, people can take out books.
-  technologies: Ruby, Rspec
   github: https://github.com/GergKllai1/library-challenge
   website:
+  technologies:
+    - images/ruby.png
+    - images/rspec.png
+
+- name: My First Website
+  description: My first website, written in html with some light css. It's noth much as to be expected, just kept here to see where I come from :)
+  github: https://github.com/GergKllai1/library-challenge
+  website:
+  technologies:
+    - images/ruby.png
+    - images/rspec.png

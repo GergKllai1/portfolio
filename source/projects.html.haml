@@ -2,12 +2,16 @@
 
 .projects
     -data.projects.each do |project|
-        %img(src="#{project[:picture]}" alt="")/
+        %img.projectimage(src="#{project[:picture]}" alt="")/
         %h2= project[:name]
         %p= project[:description]
-        %a(href="#{project[:github]}")
-            %img.linklogos(src="images/github2.png" alt="no image")/
-        -if project[:website] != nil
-            %a(href="#{project[:website]}")
-                %img.linklogos(src="images/website.png" alt="no image")/
-
+        %p Technologies:
+        .linklogos
+            -project[:technologies].each do |logo|
+                %img(src="#{logo}" alt="no image")/
+        .linklogos
+            %a(href="#{project[:github]}" target="_blank")
+                %img.linklogos(src="images/github2.png" alt="no image")/
+            -if project[:website] != nil
+                %a(href="#{project[:website]}" target="_blank")
+                    %img.linklogos(src="images/website.png" alt="no image")/
