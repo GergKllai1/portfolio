@@ -2,11 +2,13 @@
     img{
     width: 150px;
     height: 150px;
+    margin: 0 auto;
     }
     #cucumber{
         width: 250px;
     }
-    #rspec{
-        width: 200px;
-    }
+}
+
+body{
+    background-color: darkslategray
 }

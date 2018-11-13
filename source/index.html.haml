@@ -1,4 +1,5 @@
 = partial 'partials/header'
+
 %h1 Hello World
 
 %p I am Gregory Kallai Junior Software developer
@@ -8,9 +9,5 @@
 %p The main technologies I work with:
 
 .images
-    %img(src="images/js.png" alt="No image avaliable" srcset="")/
-    %img(src="images/rby.png" alt="No image avaliable" srcset="")/
-    %img(src="images/css.png" alt="No image avaliable" srcset="")/
-    %img(src="images/tailwind.png" alt="No image avaliable" srcset="")/
-    %img#cucumber(src="images/cucumber.png" alt="No image avaliable" srcset="")/
-    %img#rspec(src="images/rspec.jpg" alt="No image avaliable" srcset="")/
+    - data.logos.each do |logo|
+        %img(src="#{logo[:logo]}" alt="no image")/
