@@ -2,9 +2,11 @@
 
 .projects
     -data.projects.each do |project|
+        %img(src="#{project[:picture]}" alt="")/
         %h2= project[:name]
         %p= project[:description]
         %p
             = link_to 'Repo', "#{project[:github]}"
         -if project[:website] != nil
             = link_to 'Website', "#{project[:website]}"
+
