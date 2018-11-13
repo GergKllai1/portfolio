@@ -5,8 +5,9 @@
         %img(src="#{project[:picture]}" alt="")/
         %h2= project[:name]
         %p= project[:description]
-        %p
-            = link_to 'Repo', "#{project[:github]}"
+        %a(href="#{project[:github]}")
+            %img.linklogos(src="images/github2.png" alt="no image")/
         -if project[:website] != nil
-            = link_to 'Website', "#{project[:website]}"
+            %a(href="#{project[:website]}")
+                %img.linklogos(src="images/website.png" alt="no image")/
 
