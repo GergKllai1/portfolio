@@ -9,6 +9,7 @@ body
 .sidebar
     grid-column: 1/2
     background-color: #0049C6
+    min-height: 100vh
     a
         text-decoration: none
         color: white
@@ -35,13 +36,16 @@ body
     width: 10%
 
 .header
+    display: flex
+    align-items: center
     height: 90px
     background: #0049C6
     grid-column: 2/3
     color: white
     font-family: profont
+    font-size: 24px
     letter-spacing: 15px
-    padding-left: 50px
+    padding-left: 4em
 
 .mainbar
     grid-column: 2/3
@@ -50,11 +54,13 @@ body
 
 .intro
     margin-left: 30px
-    height: 100%
+    height: auto
 
 .images
     display: flex
     justify-content: center
+    align-items: flex-end
+    flex-grow: 1
     img
         width: 75px
         height: 75px
@@ -66,7 +72,8 @@ body
     display: flex
     flex-grow: 1
     flex-wrap: wrap
-    margin-right: 6em
+    margin-left: 4em
+    margin-top: 4em
 
 .projectcard
     display: flex
@@ -75,8 +82,9 @@ body
     background-color: #1259D7
     color: white
     width: 45%
-    height: 400px
+    height: auto
     margin: 1%
+    margin-bottom: 4em
     border-radius: 30px
     border-left: 5px solid darkblue
     img
@@ -84,7 +92,10 @@ body
         height: 50px
         margin: 20px
 .projectcard:hover
-    background-color: #0957DA
+    background-color: #034CC5
+    .content
+        font-size: 105%
+        opacity: 1
 
 .head
     display: flex
@@ -116,5 +127,7 @@ body
     border-right: 4px solid darkblue
     border-left: 4px solid darkblue
     height: auto
-    font-size: 14px
+    font-size: 0px
+    opacity: 0.6
+    transition: font-size 0.2s
 
