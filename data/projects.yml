@@ -6,9 +6,6 @@
   technologies:
       - images/js.png
       - images/cucumber1.png
-      - images/html.png
-      - images/css.png
-      - images/tailwind1.png
 
 - name: Address Book
   description: An address book where you can add contacts and they are being stored at localstorage and displayed on the page.
@@ -18,8 +15,6 @@
   technologies:
       - images/js.png
       - images/cucumber1.png
-      - images/html.png
-      - images/css.png
       - images/tailwind1.png
 
 - name: BMI Calcultator
@@ -30,8 +25,6 @@
   technologies:
       - images/js.png
       - images/cucumber1.png
-      - images/html.png
-      - images/css.png
 
 - name: ATM simulator
   description: An ATM simulator written in Ruby, tested in Rspec. Users can make account, deposit, withdraw, get a job and work.
