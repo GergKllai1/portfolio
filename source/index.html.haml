@@ -17,13 +17,13 @@
 .projects
     -data.projects.each do |project|
         .projectcard
-            %img.projectimage(src="#{project[:picture]}" alt="")/
-            %h2= project[:name]
-            %a(href="#{project[:github]}" target="_blank")
-                %img.links(src="images/github2.png" alt="no image")/
-            -if project[:website] != nil
-                %a(href="#{project[:website]}" target="_blank")
-                    %img.links(src="images/website.png" alt="no image")/
+            .head
+                %span= project[:name]
+                %img(src="#{project[:picture]}" alt="")/
+            %div
+                %img.links(href="#{project[:github]}" target="_blank" src="images/github2.png" alt="no image")/
+                -if project[:website] != nil
+                    %img.links(href="#{project[:website]}" target="_blank" src="images/website.png" alt="no image")/
             %p= project[:description]
             %p Technologies:
             .linklogos
