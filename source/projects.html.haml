@@ -1,19 +1,6 @@
 = partial 'partials/header'
 .maintab
 
-    .intro
-        %h1 Hello World!
-
-        %p I am Gregory Kallai Junior Software developer in the making and this is my Portfolio website
-
-        %p The main technologies I work with:
-
-    .images
-        - data.logos.each do |logo|
-            %img.github(src="#{logo[:logo]}" alt="no image")/
-
-
-    %h2#pr Projects:
     .projects
         -data.projects.each do |project|
             .projectcard
