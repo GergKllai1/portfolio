@@ -1,17 +1,14 @@
-.background
-    = partial 'partials/header'
+%h1 Hello World!
 
-    %h1 Hello World!
+%p I am Gregory Kallai Junior Software developer and this is my Portfolio website
 
-    %p I am Gregory Kallai Junior Software developer and this is my Portfolio website
+%p Navigating on the tabs you can see my main projects and get to know me better
 
-    %p Navigating on the tabs you can see my main projects and get to know me better
+%p The main technologies I work with:
 
-    %p The main technologies I work with:
-
-    .images
-        - data.logos.each do |logo|
-            %img.github(src="#{logo[:logo]}" alt="no image")/
+.images
+    - data.logos.each do |logo|
+        %img.github(src="#{logo[:logo]}" alt="no image")/
 
 
 .projects
@@ -20,12 +17,11 @@
             .head
                 %span= project[:name]
                 %img(src="#{project[:picture]}" alt="")/
-            %div
-                %img.links(href="#{project[:github]}" target="_blank" src="images/github2.png" alt="no image")/
+            .links
+                %img(href="#{project[:github]}" target="_blank" src="images/github2.png" alt="no image")/
                 -if project[:website] != nil
                     %img.links(href="#{project[:website]}" target="_blank" src="images/website.png" alt="no image")/
-            %p= project[:description]
-            %p Technologies:
+            %p.content= project[:description]
             .linklogos
                 -project[:technologies].each do |logo|
                     %img(src="#{logo}" alt="no image")/
