@@ -1,24 +1,27 @@
-body {
-  background-color: #fbc547;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
-  text-align: center;
+.images{
+    display: flex;
+    justify-content: center;
+    img{
+    width: 75px;
+    height: 75px;
+    margin: 20px;
+    }
+    #cucumber{
+        width: 250px;
+    }
 }
 
-a {
-  color: rgba(#000, 0.7);
-
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
-  }
+.linklogos img{
+    width:50px;
+    height:50px;
+    margin: 20px;
 }
 
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
+.projectimage{
+    height: 100px;
+    width: auto;
+}
+
+body{
+    background-color: gray;
 }
