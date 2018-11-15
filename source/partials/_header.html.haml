@@ -1,5 +1,8 @@
 .header
     %h1 PORTFOLIO
+    .images
+        - data.logos.each do |logo|
+            %img.github(src="#{logo[:logo]}" alt="no image")/
 
 %img#cornerpic(src="images/programming3.jpeg" alt="no image" srcset="")/
     
