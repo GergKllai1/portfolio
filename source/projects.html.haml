@@ -5,13 +5,17 @@
         -data.projects.each do |project|
             .projectcard
                 .head
-                    %span= project[:name]
+                    .lefthead
+                        %span= project[:name]
+                        .tech
+                            -project[:technologies].each do |logo|
+                                %img(src="#{logo}" alt="no image")
                     %img(src="#{project[:picture]}" alt="")/
                 .links
-                    %img(href="#{project[:github]}" target="_blank" src="images/github2.png" alt="no image")/
+                    %a(href="#{project[:github]}" target="_blank")
+                        %img#linklogo(src="images/github2.png" alt="no image")/
                     -if project[:website] != nil
-                        %img.links(href="#{project[:website]}" target="_blank" src="images/website.png" alt="no image")/
+                        %a(href="#{project[:website]}" target="_blank")
+                            %img#linklogo(href="#{project[:website]}" target="_blank" src="images/website.png" alt="no image")/
                 %p.content= project[:description]
-                .linklogos
-                    -project[:technologies].each do |logo|
-                        %img(src="#{logo}" alt="no image")/
+                
