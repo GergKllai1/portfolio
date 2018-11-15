@@ -5,8 +5,9 @@
             %h1 Hello World;
             .introcontent
                 .text
-                    %p I am Gregory Kallai Junior Software developer in the making and this is my Portfolio website
-                    %p Feel free to look around, if you see something you like do not hesitate to contact me with the form bellow:
+                    %p I am Gregory Kallai Junior Software developer in the making
+                    %p This is my Portfolio website, please take a look around 
+                    %p If you see something that you like do not hesitate to contact me with the form bellow:
                 %img(src="images/personal.jpeg" alt="no image")/
     .mainform
         %form.contactform(name="contact" method="POST" netlify)
@@ -16,13 +17,13 @@
                 %input(type="text" name="name")/
             %p
                 %label(for="email") Your Email:
-                %input(type="text" name="name")/
+                %input(type="email" name="name")/
             %p
                 %label(for="company") Your Company:
                 %input(type="text" name="name")/
             %p
                 %label(for="message") Your Message:
-                %textarea(type="text" name="message")
+                %textarea(type="text" name="message" rows="4")
             %button(type="submit") Submit
         
 

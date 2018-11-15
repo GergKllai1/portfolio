@@ -8,12 +8,12 @@
     height: 100%
     opacity: 1
     z-index: -1
-    
 
+$themecolor: #0C306C
 
 body
     background-color: #ECF1FA
-    font-family: sans-serif
+    font-family: Georgia, 'Times New Roman', Times, serif
     color: black
     margin: 0
     display: grid
@@ -25,16 +25,18 @@ body
 .maintab:after
     @extend .backgroundopacity
     background-image: url("coding.jpeg")
+    background-size: cover
 
 .sidebar
     grid-column: 1/2
-    background-color: #0049C6
+    background-color: $themecolor
     min-height: 100vh
     a
         text-decoration: none
         color: white
         padding: 10px
         align-self: center
+        transition: 0.2s
     a:hover
         background: white
         color: black
@@ -59,7 +61,7 @@ body
     display: flex
     align-items: center
     height: 90px
-    background: #0049C6
+    background: $themecolor
     grid-column: 2/3
     color: white
     font-family: profont
@@ -79,7 +81,7 @@ body
     color: white
     border: 2px solid
     border-radius: 15px
-    background-color: #0049C6
+    background-color: $themecolor
     width: 40%
     padding: 1%
     h1
@@ -100,6 +102,35 @@ body
     display: flex
     flex-direction: row-reverse
     margin: 2%
+    p
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        align-items: center
+    input
+        width: 150px
+        height: 20px
+        border-radius: 15px
+        font-size: 14px
+    textarea
+        width: 250px
+        border-radius: 15px
+    button
+        margin: 5%
+        font-size: 16px
+        width: auto
+        height: auto
+        background-color: white
+        border-radius: 15px
+        border: 1px solid white
+        transition: 0.2s
+        width: 100px
+    button:hover
+        background-color: $themecolor
+        color: white
+        border: 3px solid white
+        cursor: pointer
+        width: 120px
 
 .contactform
     display: flex
@@ -107,7 +138,7 @@ body
     width: 30%
     align-items: center
     border: 2px solid
-    background-color: #0049C6
+    background-color: $themecolor
     color: white
     border-radius: 15px
 
@@ -126,6 +157,7 @@ body
 
 .projecttab
     position: relative
+    grid-column: 2/3
 .projecttab:after
     background-image: url("coding2.jpg")
     opacity: 0.9
@@ -143,7 +175,7 @@ body
 .projectcard
     display: flex
     flex-direction: column
-    background-color: #1259D7
+    background-color: $themecolor
     color: white
     width: 40%
     min-width: 30px
@@ -168,7 +200,7 @@ body
     margin-left: 3%
     margin-bottom: 0px
     margin-up: 0px
-    height: 80px
+    height: 100px
     span
         align-self: center
     img
@@ -179,6 +211,8 @@ body
     display: flex
     flex-direction: column
     justify-content: space-around
+    p
+        font-size: 10px
     
 .tech
     img
