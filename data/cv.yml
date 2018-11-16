@@ -1,0 +1,24 @@
+- company: Craft Academy
+  duration: 01/10/2018 - present
+
+- company: Procter & Gamble
+  duration: 02/09/2013 - 01/10/2018
+  positions:
+    - position: Production line manager
+      duration: 01/01/2017 - 01/10/2018
+      description: Analysing and eliminating losses, creating the yearly master-plan, managing the line technician team (15 people)
+    - position: Warehouse manager responsible for line supply and DC operation
+      duration: 01/07/2014 - 2017/01/01
+      description: Warehouse operation optimalization, creating the yearly productivity plans managing the warehouse team (50 people)
+    - position: Warehousing and transportiation manager intern
+      duration: 02/09/2013 - 28/02/2014
+      description: Launching and operating an outside warehousing project, warehouse layout optimalization
+- company: AIESEC
+  duration: 01/01/2012 - 30/06/2013
+  positions:
+    - position: Vice president for Finance
+      duration: 30/06/2012 - 01/07/2013
+      description: Creating yearly budget, accounting, bookkeeping, organizing conferences
+    - position: Middle manager for corporate relations
+      duration: 01/01/2012- 30/06/2013
+      description: Contacting companies, selling contracts
