@@ -5,7 +5,19 @@
     .personaldata
         %p some personal data
     .workxp
-        %p Some stuff here
+        %h1 Working experience
+        -data.cv.each do |job|
+            .workxpcard
+                .company
+                    %img(src="#{job[:logo]}" alt="no image")/
+                    %h3= "#{job[:duration]}"
+                .positions
+                    - job[:positions].each do |pos|
+                        .position
+                            %h3= "#{pos[:position]}"
+                            %h5= "#{pos[:duration]}"
+                            %p= "#{pos[:description]}"
+
     .studies
         %p About studies
     .skills
