@@ -8,13 +8,13 @@
     height: 100%
     opacity: 1
     z-index: -1
+    background-size: cover
 
 $themecolor: #0C306C
 
 body
-    background-color: #ECF1FA
     font-family: Georgia, 'Times New Roman', Times, serif
-    color: black
+    color: white
     margin: 0
     display: grid
     grid-template-columns: 10% 90%
@@ -25,8 +25,8 @@ body
 .maintab:after
     @extend .backgroundopacity
     background-image: url("coding.jpeg")
-    background-size: cover
-
+    opacity: 0.95
+    
 .sidebar
     grid-column: 1/2
     background-color: $themecolor
@@ -63,8 +63,6 @@ body
     height: 90px
     background: $themecolor
     grid-column: 2/3
-    color: white
-    font-family: profont
     font-size: 20px
     letter-spacing: 3px
     padding-left: 2%
@@ -78,7 +76,6 @@ body
     flex-direction: column
     align-items: center
     margin: 2%
-    color: white
     border: 2px solid
     border-radius: 15px
     background-color: $themecolor
@@ -95,7 +92,6 @@ body
         border: 1px solid white
 .introcontent
     display: flex
-
 
 
 .mainform
@@ -152,17 +148,15 @@ body
         width: 50px
         height: auto
         margin: 20px
-        #cucumber
-            width: 250px
 
 .projecttab
     position: relative
     grid-column: 2/3
 .projecttab:after
+    @extend .backgroundopacity
     background-image: url("coding2.jpg")
     opacity: 0.9
-    background-size: cover
-    @extend .backgroundopacity
+
 
 .projects
     display: flex
@@ -178,7 +172,7 @@ body
     background-color: $themecolor
     color: white
     width: 40%
-    min-width: 30px
+    min-width: 300px
     height: auto
     margin: 1%
     margin-bottom: 4em
@@ -227,7 +221,7 @@ body
     width: auto
     height: 0px
     margin: 10px
-    transition: height 0.2s
+    transition: height 0.1s
     transition: 0.5s
 #linklogo:hover
     background: white
@@ -241,5 +235,5 @@ body
     border-radius: 20px
     height: auto
     font-size: 0px
-    transition: font-size 0.3s
+    transition: font-size 0.1s
 

@@ -14,16 +14,13 @@
             %h2 Contact Me!
             %p
                 %label(for="name") Your Name:
-                %input(type="text" name="name")/
+                %input(type="text" name="name" required)/
             %p
                 %label(for="email") Your Email:
-                %input(type="email" name="name")/
-            %p
-                %label(for="company") Your Company:
-                %input(type="text" name="name")/
+                %input(type="email" name="name" required)/
             %p
                 %label(for="message") Your Message:
-                %textarea(type="text" name="message" rows="4")
+                %textarea(type="text" name="message" rows="4" required)
             %button(type="submit") Submit
         
 
