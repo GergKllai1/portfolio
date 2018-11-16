@@ -1,16 +1,34 @@
-.background
-    = partial 'partials/header'
+= partial 'partials/header'
+.maintab
+    .intro
+        .introheader
+            %h1 Hello World;
+            .introcontent
+                .text
+                    %p I am Gregory Kallai Junior Software developer in the making
+                    %p This is my Portfolio website, please take a look around 
+                    %p If you see something that you like do not hesitate to contact me with the form bellow:
+                %img(src="images/personal.jpeg" alt="no image")/
+    .mainform
+        %form.contactform(name="contact" method="POST" netlify)
+            #displayed{:onclick => "openForm()"}
+                %h2 Contact Me!
+            #hidden
+                %p
+                    %label(for="name") Your Name:
+                    %input(type="text" name="name" placeholder="John Smith" required)/
+                %p
+                    %label(for="email") Your Email:
+                    %input(type="email" name="name" placeholder="johnsmith@email.com" required)/
+                %p
+                    %label(for="message") Your Message:
+                    %textarea(type="text" name="message" rows="4" placeholder="Your awesome!" required)
+                %p
+                    %button(type="submit") Submit
+            
 
-    %h1 Hello World!
 
-    %p I am Gregory Kallai Junior Software developer and this is my Portfolio website
 
-    %p Navigating on the tabs you can see my main projects and get to know me better
-
-    %p The main technologies I work with:
-
-    .images
-        - data.logos.each do |logo|
-            %img.github(src="#{logo[:logo]}" alt="no image")/
+    
 
 
