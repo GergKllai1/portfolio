@@ -11,18 +11,21 @@
                 %img(src="images/personal.jpeg" alt="no image")/
     .mainform
         %form.contactform(name="contact" method="POST" netlify)
-            %h2 Contact Me!
-            %p
-                %label(for="name") Your Name:
-                %input(type="text" name="name" required)/
-            %p
-                %label(for="email") Your Email:
-                %input(type="email" name="name" required)/
-            %p
-                %label(for="message") Your Message:
-                %textarea(type="text" name="message" rows="4" required)
-            %button(type="submit") Submit
-        
+            #displayed{:onclick => "openForm()"}
+                %h2 Contact Me!
+            #hidden
+                %p
+                    %label(for="name") Your Name:
+                    %input(type="text" name="name" placeholder="John Smith" required)/
+                %p
+                    %label(for="email") Your Email:
+                    %input(type="email" name="name" placeholder="johnsmith@email.com" required)/
+                %p
+                    %label(for="message") Your Message:
+                    %textarea(type="text" name="message" rows="4" placeholder="Your awesome!" required)
+                %p
+                    %button(type="submit") Submit
+            
 
 
 
