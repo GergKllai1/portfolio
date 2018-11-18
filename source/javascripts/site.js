@@ -1,4 +1,4 @@
-const openForm = function(){
+const openForm = () => {
     const form = document.getElementById('hidden')
     if(form.style.display == "none"){
         form.style.display = "block"

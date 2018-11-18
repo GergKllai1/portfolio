@@ -1,2 +1,54 @@
 = partial 'partials/header'
-.maintab
+.aboutme
+    .name
+        %h1 Gregory Kallai
+        %img(src="images/personal.jpeg" alt="no image")/
+    .personaldata
+        .basics
+            %p 04/11/1990; Szolnok; Hungary
+            %p Garverigatan 9, 416 64 Gothenburg
+            %p +36/20 267 6878
+            .clickable
+                %a(href="https://github.com/GergKllai1" target="_blank")
+                    %img(src="images/github2.svg" alt="no image")/
+                %a(href="mailto:gerg.kallai@gmail.com")
+                    %img(src="images/gmail.svg" alt="no image")/
+    .workxp
+        %h1 Work experience
+        -data.cv.each do |job|
+            .workxpcard
+                .company
+                    %img(src="#{job[:logo]}" alt="no image")/
+                    %h3= "#{job[:duration]}"
+                .positions
+                    - job[:positions].each do |pos|
+                        .position
+                            %h3= "#{pos[:position]}"
+                            %h4= "#{pos[:duration]}"
+                            %p= "#{pos[:description]}"
+
+    .studies
+        %h1 Studies
+        .schools
+            %h4 Budapest Business School College for International Management and Business
+            %h5 01/09/2009 - 30/06/2014
+        .schools
+            %h4 Hamburg School of Business Administartion
+            %h5 01/09/2009 - 30/06/2014
+
+    .skills
+        %h1 Skills
+        .oneblock
+            .languages
+                %h4 Languages:
+                %h5 English - Fluent
+                %h5 German - Intermediate
+                %h5 Swedish - Beginner
+            .computer
+                %h4 Computer skills:
+                %h5 Ruby
+                %h5 JavaScript
+                %h5 Cucumber
+                %h5 RSpec
+
+
