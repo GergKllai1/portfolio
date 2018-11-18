@@ -262,26 +262,46 @@ body
     color: black
     display: grid
     grid-template-columns: 1fr 1fr
-    grid-template-rows: 1fr 6fr 1fr
+    grid-template-rows: 1fr 5fr 1fr
     margin: 1%
 
 .name
     grid-column: 1/2
     grid-row: 1/2
+    img
+        height: 120px
+        width: auto
+        border-radius: 50%
 
 .personaldata
+    display: flex
     grid-column: 2/3
     grid-row: 1/2
+    flex-direction: row-reverse
+    img
+        height: 40px
+        width: auto
+.basics
+    display: flex
+    flex-direction: column
+.clickable
+    display: flex
+    justify-content: space-around
+
 
 .workxp
     grid-column: 1/3
     grid-row: 2/3
+    border-top: 3px solid black
     img
         height: 100px
         width: auto
+.workxpcard
+    transition: height 0.5s
+
 .positions
     display: flex
-
+    flex-wrap: wrap
 
 .position
     color: white
@@ -289,13 +309,17 @@ body
     border: 3px solid black
     padding: 1%
     margin-left: 3%
-    width: 28%
+    width: 25%
+    min-width: 25%
     border-radius: 15px
-
 .studies
     grid-column: 1/3
     grid-row: 3/4
+    width: 40%
+    border-top: 3px solid black
 
 .skills
     grid-column: 2/3
     grid-row: 3/4
+    width: 50%
+    display: flex

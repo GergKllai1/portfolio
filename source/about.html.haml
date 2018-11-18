@@ -2,8 +2,17 @@
 .aboutme
     .name
         %h1 Gregory Kallai
+        %img(src="images/personal.jpeg" alt="no image")/
     .personaldata
-        %p some personal data
+        .basics
+            %p Garverigatan 9, 416 64 Gothenburg
+            %p 04/11/1990 Szolnok, Hungary
+            %p +36/20 267 6878
+            .clickable
+                %a(href="https://github.com/GergKllai1")
+                    %img(src="images/github2.svg" alt="no image")/
+                %a(href="mailto:gerg.kallai@gmail.com")
+                    %img(src="images/gmail.svg" alt="no image")/
     .workxp
         %h1 Working experience
         -data.cv.each do |job|
@@ -15,10 +24,23 @@
                     - job[:positions].each do |pos|
                         .position
                             %h3= "#{pos[:position]}"
-                            %h5= "#{pos[:duration]}"
+                            %h4= "#{pos[:duration]}"
                             %p= "#{pos[:description]}"
 
     .studies
-        %p About studies
+        %h1 Studies
+        %h4 Budapest Business School College for International Management and Business
+        %h5 01/09/2009 - 30/06/2014
+        %h4 Hamburg School of Business Administartion
+        %h5 01/09/2009 - 30/06/2014
+
     .skills
-        %p About skills
+        %h1 Skills
+        .languages
+            %h4 Languages:
+            %h5 English - Fluent
+            %h5 German - Intermediate
+        .computer
+            %h5 Ruby
+            %h5 JavaScript
+
