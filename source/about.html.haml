@@ -5,16 +5,16 @@
         %img(src="images/personal.jpeg" alt="no image")/
     .personaldata
         .basics
+            %p 04/11/1990; Szolnok; Hungary
             %p Garverigatan 9, 416 64 Gothenburg
-            %p 04/11/1990 Szolnok, Hungary
             %p +36/20 267 6878
             .clickable
-                %a(href="https://github.com/GergKllai1")
+                %a(href="https://github.com/GergKllai1" target="_blank")
                     %img(src="images/github2.svg" alt="no image")/
                 %a(href="mailto:gerg.kallai@gmail.com")
                     %img(src="images/gmail.svg" alt="no image")/
     .workxp
-        %h1 Working experience
+        %h1 Work experience
         -data.cv.each do |job|
             .workxpcard
                 .company
