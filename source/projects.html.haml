@@ -1,0 +1,22 @@
+= partial 'partials/header'
+.projecttab
+
+    .projects
+        -data.projects.each do |project|
+            .projectcard 
+                .head
+                    .lefthead
+                        %span= project[:name]
+                        %p written and tested using:
+                        .tech
+                            -project[:technologies].each do |logo|
+                                %img(src="#{logo}" alt="no image")
+                    %img(src="#{project[:picture]}" alt="")/
+                .links
+                    %a(href="#{project[:github]}" target="_blank")
+                        %img#linklogo(src="images/github2.png" alt="no image")/
+                    -if project[:website] != nil
+                        %a(href="#{project[:website]}" target="_blank")
+                            %img#linklogo(href="#{project[:website]}" target="_blank" src="images/website.png" alt="no image")/
+                %p.content= project[:description]
+                
