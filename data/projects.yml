@@ -1,3 +1,51 @@
+- name: Ionic Cooper test
+  description: A cooper test application on mobile.
+  picture: images/cooper.png
+  github: https://github.com/GergKllai1/ionic_bmi_calculator
+  technologies:
+      - images/ionic.png
+      - images/karma.png
+      - images/jasmine.png
+
+- name: Ionic BMI calculator
+  description: A BMI calculator on mobile.
+  picture: images/bmimobile.png
+  github: https://github.com/GergKllai1/ionic_bmi_calculator
+  technologies:
+      - images/ionic.png
+      - images/karma.png
+      - images/jasmine.png
+
+- name: CarDnD
+  description: A car sharing application.
+  picture: images/cardnd.png
+  github: https://github.com/GergKllai1/CARdnd
+#   website: https://moestavern.herokuapp.com/
+  technologies:
+      - images/rails.png
+      - images/rspec.png
+      - images/cucumber1.png
+
+- name: Moe's Tavern
+  description: An online food ordering application.
+  picture: images/moes.png
+  github: https://github.com/GergKllai1/slowfood-oct18-team1
+  website: https://moestavern.herokuapp.com/
+  technologies:
+      - images/rails.png
+      - images/rspec.png
+      - images/cucumber1.png
+
+
+- name: Rock Paper Scissors Game
+  description: A rock paper scissor game.
+  picture: images/rps.jpg
+  github: https://github.com/GergKllai1/RPS_Game
+  website: https://gergkllai1.github.io/RPS_Game/
+  technologies:
+      - images/js.png
+      - images/cucumber1.png
+
 - name: FizzBuzz Game
   description: A FizzBuzz game where you get a number and you have to guess whether they are Fizz, Buzz, FizzBuzz or neither. You have 60 seconds to achieve high score.
   picture: images/FizzBuzz.png
