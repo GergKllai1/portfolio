@@ -1,3 +1,11 @@
+# Portolio website
+##### of Gregory Kallai
+
+## About:
+- The website was made with middleman, using yml to store data and scss for styling
+- You can find the website here:
+  - https://gregorykallai.netlify.com/
+
 ### User Stories:
 
 - As a user
